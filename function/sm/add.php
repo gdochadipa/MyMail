@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
 
 
   $query = "INSERT INTO	tbl_surat_masuk (id_surat,no_agenda,no_surat,asal_surat,subjek,tgl_surat,tgl_terima,keterangan,id_jenis_surat,disposisi,id_user) VALUES
-  ($id_surat,$no_agenda,$no_surat,$asal_surat,$subjek,$tgl_surat,$tgl_diterima,$keterangan,$id_jenis_surat,$disposisi,$id_user)";
+  ('$id_surat','$no_agenda','$no_surat','$asal_surat','$subjek','$tgl_surat','$tgl_diterima','$keterangan','$id_jenis_surat','$disposisi','$id_user')";
 
   $execute = $main->execute($query);
   if ($execute) {
