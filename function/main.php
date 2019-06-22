@@ -10,7 +10,7 @@
 
    public function __construct()
    {
-     $this->connect = new mysqli("localhost","root","","mymaildb");
+     $this->connect = new mysqli("gdocha.database.windows.net","gdocha","Ananda66","mymail");
    }
  }
 
